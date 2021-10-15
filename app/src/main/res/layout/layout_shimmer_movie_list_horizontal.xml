@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:shimmer_duration="1500">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgMovieThumbnail"
+                android:layout_width="110dp"
+                android:layout_height="0dp"
+                android:background="#4A4A4A"
+                app:layout_constraintDimensionRatio="3:4.2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:background="#4A4A4A"
+                android:maxLines="1"
+                android:padding="1dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgMovieThumbnail" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:shimmer_duration="1500">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgMovieThumbnail"
+                android:layout_width="110dp"
+                android:layout_height="0dp"
+                android:background="#4A4A4A"
+                app:layout_constraintDimensionRatio="3:4.2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:background="#4A4A4A"
+                android:maxLines="1"
+                android:padding="1dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgMovieThumbnail" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:shimmer_duration="1500">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgMovieThumbnail"
+                android:layout_width="110dp"
+                android:layout_height="0dp"
+                android:background="#4A4A4A"
+                app:layout_constraintDimensionRatio="3:4.2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:background="#4A4A4A"
+                android:maxLines="1"
+                android:padding="1dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgMovieThumbnail" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:shimmer_duration="1500">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgMovieThumbnail"
+                android:layout_width="110dp"
+                android:layout_height="0dp"
+                android:background="#4A4A4A"
+                app:layout_constraintDimensionRatio="3:4.2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:background="#4A4A4A"
+                android:maxLines="1"
+                android:padding="1dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgMovieThumbnail" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:shimmer_duration="1500">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgMovieThumbnail"
+                android:layout_width="110dp"
+                android:layout_height="0dp"
+                android:background="#4A4A4A"
+                app:layout_constraintDimensionRatio="3:4.2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:background="#4A4A4A"
+                android:maxLines="1"
+                android:padding="1dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgMovieThumbnail" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</LinearLayout>

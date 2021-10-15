@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_background"
+        android:padding="5dp"
+        tools:context=".ui.main.MainActivity">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtPopular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/popular"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtPopularSeeAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/see_all"
+                    android:textColor="@color/blue"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@id/txtPopular"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/txtPopular" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvPopularMovieList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/txtPopular" />
+
+                <include
+                    layout="@layout/layout_shimmer_movie_list_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@id/rvPopularMovieList"
+                    app:layout_constraintLeft_toLeftOf="@id/rvPopularMovieList"
+                    app:layout_constraintRight_toRightOf="@id/rvPopularMovieList"
+                    app:layout_constraintTop_toTopOf="@id/rvPopularMovieList" />
+
+                <TextView
+                    android:id="@+id/txtTrending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:text="@string/trending"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/rvPopularMovieList" />
+
+                <TextView
+                    android:id="@+id/txtTrendingSeeAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/see_all"
+                    android:textColor="@color/blue"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@id/txtTrending"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/txtTrending" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvTrendingMovieList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/txtTrending" />
+
+                <TextView
+                    android:id="@+id/txtTopRated"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:text="@string/top_rated"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/rvTrendingMovieList" />
+
+                <TextView
+                    android:id="@+id/txtTopRatedSeeAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/see_all"
+                    android:textColor="@color/blue"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@id/txtTopRated"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/txtTopRated" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvTopRatedMovieList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/txtTopRated" />
+
+                <TextView
+                    android:id="@+id/txtUpComing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:padding="5dp"
+                    android:text="@string/upcoming"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/rvTopRatedMovieList" />
+
+                <TextView
+                    android:id="@+id/txtUpComingSeeAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/see_all"
+                    android:textColor="@color/blue"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@id/txtUpComing"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/txtUpComing" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvUpComingMovieList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/txtUpComing" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

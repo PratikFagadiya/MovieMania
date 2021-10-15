@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="movieListClick"
+            type="com.pratik.moviemania.ui.callbacks.MovieListClickListener" />
+
+        <variable
+            name="movieListResult"
+            type="com.pratik.moviemania.data.models.MovieListResult" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:transitionName="poster"
+        android:onClick="@{() -> movieListClick.movieListClick(movieListResult)}"
+        app:cardCornerRadius="5dp">
+
+        <ImageView
+            android:id="@+id/imgMovieThumbnail"
+            android:layout_width="110dp"
+            android:layout_height="0dp"
+            app:bind_poster_path="@{movieListResult.posterPath}"
+            app:layout_constraintDimensionRatio="3:4.2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:maxLines="1"
+            android:padding="1dp"
+            android:text="@{movieListResult.title}"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgMovieThumbnail" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

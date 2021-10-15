@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MovieMania</string>
+
+    <string name="see_all">See All</string>
+    <string name="popular">Popular</string>
+    <string name="trending">Trending</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="upcoming">Upcoming</string>
+
+</resources>
